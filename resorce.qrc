@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>mic1.png</file>
+    <file>sugg.png</file>
+    <file>Den.png</file>
+    <file>exit.png</file>
+    <file>git.png</file>
+    <file>micro.png</file>
+  </qresource>
+</RCC>
