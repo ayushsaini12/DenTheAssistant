@@ -34,7 +34,7 @@ class Gui_start(QMainWindow):
         self.gui.git.clicked.connect(self.chrome_app)
 
     def chrome_app(self):
-        web.open("https://github.com")
+        web.open("https://github.com/ayushsaini12/DenTheAssistant")
 
     def start(self):
         startExe.start()

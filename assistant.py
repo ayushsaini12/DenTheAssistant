@@ -9,7 +9,7 @@ import wikipedia
 import webbrowser
 import os
 import smtplib
-import winsound
+# import winsound
 import pyautogui
 from tkinter import *
 from playsound import playsound
@@ -102,6 +102,8 @@ def brightness():
             brightness()
     except:
         speak('Something went wrong')
+        with open ('bright.txt','w') as f:
+                f.write(query+ "\n")
 
 
 def assisrun():
@@ -253,6 +255,10 @@ def assisrun():
                 speak('ok opening uber')
                 webbrowser.open('https://www.uber.com')
                 break
+            elif 'rapido' in query:
+                speak('ok opening rapido')
+                webbrowser.open('https://www.rapido.bike/')
+                break
             else:
                 speak(
                     'Sorry sir, the website are you talking about is new to me.')
@@ -286,3 +292,7 @@ def assisrun():
             webbrowser.open("https://www.twitter.com")
             speak('ok opening twitter')
             break
+        else:
+            with open ('extra.txt','w') as f:
+                f.write(query+ "\n")
+        
